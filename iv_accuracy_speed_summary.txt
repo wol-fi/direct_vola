@@ -1,0 +1,9 @@
+Accuracy summary
+    method       mean_abs_err        max_abs_err  nan
+LBR_vollib 0.0000000000000003 0.0000000000000012    0
+F_IG_numba 0.0000000000000034 0.0000000000003573    0
+
+Speed summary
+    method     seconds_median       seconds_mean  us_per_eval_median    us_per_eval_mean
+LBR_vollib 0.0446481999999833 0.0446481999999833 13.6122560975558731 13.6122560975558731
+F_IG_numba 0.0075236000000132 0.0075236000000132  2.2937804878088950  2.2937804878088950

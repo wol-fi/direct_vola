@@ -1,0 +1,4 @@
+﻿numpy
+pandas
+numba
+py_vollib
