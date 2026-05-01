@@ -4,7 +4,7 @@ This repository contains demo Python and R code accompanying the paper:
 
 An Explicit Solution to Black-Scholes Implied Volatility  
 Wolfgang Schadner  
-[arXiv:2604.24480](https://arxiv.org/abs/2604.24480)
+[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6649499)
 
 ## Scope
 
