@@ -16,6 +16,9 @@
 # warranty of any kind. It should not be interpreted as production-ready
 # numerical software.
 
+args <- commandArgs(trailingOnly = TRUE)
+output_path <- if (length(args) >= 1) args[[1]] else "iv_r_summary.txt"
+
 # Functions ---------------------------------------------------------------
 
 iv_ig <- function(k, c, n = 30) {
@@ -119,4 +122,15 @@ summary <- data.frame(
 )
 
 print(summary)
-head(grid)
+print(head(grid))
+
+lines <- c(
+  "Accuracy summary",
+  paste(capture.output(print(summary)), collapse = "\n"),
+  "",
+  "First rows",
+  paste(capture.output(print(head(grid))), collapse = "\n")
+)
+
+writeLines(lines, con = output_path)
+cat("\nSaved:", output_path, "\n")
